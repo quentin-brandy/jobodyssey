@@ -1,0 +1,152 @@
+
+{
+    "secteurs": [
+        {
+            "nom": "Technologie de l'information"
+        },
+        {
+            "nom": "Finance"
+        },
+        {
+            "nom": "Santé"
+        },
+        {
+            "nom": "Éducation"
+        },
+        {
+            "nom": "Transport"
+        },
+        {
+            "nom": "Alimentation et restauration"
+        },
+        {
+            "nom": "Mode et beauté"
+        },
+        {
+            "nom": "Immobilier"
+        },
+        {
+            "nom": "Tourisme et loisirs"
+        },
+        {
+            "nom": "Industrie manufacturière"
+        },
+        {
+            "nom": "Administration publique"
+        },
+        {
+            "nom": "Éducation"
+        },
+        {
+            "nom": "Santé et action sociale"
+        },
+        {
+            "nom": "Arts, spectacles et activités récréatives"
+        },
+        {
+            "nom": "Information et communication"
+        },
+        {
+            "nom": "Activités immobilières"
+        },
+        {
+            "nom": "Activités spécialisées, scientifiques et techniques"
+        },
+        {
+            "nom": "Activités de services administratifs et de soutien"
+        },
+        {
+            "nom": "Construction"
+        },
+        {
+            "nom": "Commerce, réparation d'automobiles et de motocycles"
+        },
+        {
+            "nom": "Transports et entreposage"
+        },
+        {
+            "nom": "Hébergement et restauration"
+        },
+        {
+            "nom": "Industrie manufacturière"
+        },
+        {
+            "nom": "Agriculture, sylviculture et pêche"
+        },
+        {
+            "nom": "Extraction de minerais et de pétrole"
+        },
+        {
+            "nom": "Production et distribution d'électricité, de gaz, de vapeur et d'air conditionné"
+        },
+        {
+            "nom": "Collecte, traitement et élimination des déchets, récupération"
+        },
+        {
+            "nom": "Autres activités de services"
+        },
+        {
+            "nom": "Agriculture, sylviculture et pêche"
+        },
+        {
+            "nom": "Industrie agroalimentaire"
+        },
+        {
+            "nom": "Industrie textile et de l'habillement"
+        },
+        {
+            "nom": "Industrie du bois et du papier"
+        },
+        {
+            "nom": "Industrie chimique"
+        },
+        {
+            "nom": "Industrie pharmaceutique"
+        },
+        {
+            "nom": "Industrie métallurgique et de fabrication de machines"
+        },
+        {
+            "nom": "Industrie électrique et électronique"
+        },
+        {
+            "nom": "Industrie automobile"
+        },
+        {
+            "nom": "Industrie aéronautique et spatiale"
+        },
+        {
+            "nom": "Bâtiment et travaux publics"
+        },
+        {
+            "nom": "Commerce de gros et de détail"
+        },
+        {
+            "nom": "Transport et logistique"
+        },
+        {
+            "nom": "Hôtellerie et restauration"
+        },
+        {
+            "nom": "Services financiers et d'assurance"
+        },
+        {
+            "nom": "Services immobiliers"
+        },
+        {
+            "nom": "Services informatiques et de télécommunications"
+        },
+        {
+            "nom": "Services aux entreprises (conseil, ingénierie, R&D, etc.)"
+        },
+        {
+            "nom": "Services à la personne (santé, action sociale, enseignement, etc.)"
+        },
+        {
+            "nom": "Arts, spectacles et activités récréatives"
+        },
+        {
+            "nom": "Autres services (nettoyage, sécurité, etc.)"
+        }
+    ]
+  }

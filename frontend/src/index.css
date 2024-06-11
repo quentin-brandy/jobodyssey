@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base{
+  :root{
+ --light-blue: 214 88% 58%;
+ --dark-blue: 223  42%  45%;
+ --brown: 0  20%  21%;
+--red: 0 67% 58%;
+--gradient: linear-gradient(90deg, hsl(0, 67% ,58%), hsl(223 , 42% , 45%));
+--body: 45 73% 96%;
+
+ --boutton: var(--dark-blue);
+ --border: var(--light-blue);
+ --bg: var(--brown);
+ --stat-gradient: var(--gradient);
+  }
+
+}
+
+
+body{
+  font-family: "Work Sans", sans-serif;
+}
