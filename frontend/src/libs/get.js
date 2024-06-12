@@ -7,7 +7,7 @@ export async function ActiveOffer(offreid) {
   }
   try {
     const response = await fetch(
-      `https://apinode.quentinbrandy.fr/api/getoffreusers/?offreid=${offreid}`,
+      `http://localhost:3000/api/getoffreusers/?offreid=${offreid}`,
       {
         headers: {
           authorization: `Bearer ${token}`,
@@ -36,7 +36,7 @@ export async function getCandidatures(offreid) {
   }
   try {
     const response = await fetch(
-      `https://apinode.quentinbrandy.fr/api/getcandidatures/?offreid=${offreid}`,
+      `http://localhost:3000/api/getcandidatures/?offreid=${offreid}`,
       {
         headers: {
           authorization: `Bearer ${token}`,
@@ -71,7 +71,7 @@ export async function GetCandidaturesUser(userid) {
   }
   try {
     const response = await fetch(
-      `https://apinode.quentinbrandy.fr/api/getusercandidatures/?userid=${userid}`,
+      `http://localhost:3000/api/getusercandidatures/?userid=${userid}`,
       {
         headers: {
           authorization: `Bearer ${token}`,
@@ -97,7 +97,7 @@ export async function GetEntreprisebyOffer(offerid) {
   }
   try {
     const response = await fetch(
-      `https://apinode.quentinbrandy.fr/api/getcompanybyoffer?offerid=${offerid}`,
+      `http://localhost:3000/api/getcompanybyoffer?offerid=${offerid}`,
       {
         headers: {
           authorization: `Bearer ${token}`,
@@ -127,7 +127,7 @@ export async function AcceptCandidatures(userid, offreid) {
   }
   try {
     const response = await fetch(
-      `https://apinode.quentinbrandy.fr/api/acceptcandidatures?userid=${userid}&offreid=${offreid}`,
+      `http://localhost:3000/api/acceptcandidatures?userid=${userid}&offreid=${offreid}`,
       {
         headers: {
           authorization: `Bearer ${token}`,
@@ -153,7 +153,7 @@ export async function RefuseCandidatures(userid, offreid) {
   }
   try {
     const response = await fetch(
-      `https://apinode.quentinbrandy.fr/api/refusecandidatures?userid=${userid}&offreid=${offreid}`,
+      `http://localhost:3000/api/refusecandidatures?userid=${userid}&offreid=${offreid}`,
       {
         headers: {
           authorization: `Bearer ${token}`,
@@ -179,7 +179,7 @@ export async function CancelCandidatures(offreid) {
   }
   try {
     const response = await fetch(
-      `https://apinode.quentinbrandy.fr/api/cancelcandidatures?offreid=${offreid}`,
+      `http://localhost:3000/api/cancelcandidatures?offreid=${offreid}`,
       {
         headers: {
           authorization: `Bearer ${token}`,
@@ -198,7 +198,7 @@ export async function CancelCandidatures(offreid) {
 
 export async function GetEmploie() {
   try {
-    const response = await fetch(`https://apinode.quentinbrandy.fr/api/getemploie`, {
+    const response = await fetch(`http://localhost:3000/api/getemploie`, {
       method: "GET",
     });
     const data = await response.json();
@@ -213,7 +213,7 @@ export async function GetEmploie() {
 export async function GetCatEmploie(domaine) {
   try {
     const response = await fetch(
-      `https://apinode.quentinbrandy.fr/api/getcatemploie?domaine=${domaine}`,
+      `http://localhost:3000/api/getcatemploie?domaine=${domaine}`,
       {
         method: "GET",
       }
@@ -235,7 +235,7 @@ export async function Getuser(userid) {
   }
   try {
     const response = await fetch(
-      `https://apinode.quentinbrandy.fr/api/getcandidatureuser?userid=${userid}`,
+      `http://localhost:3000/api/getcandidatureuser?userid=${userid}`,
       {
         headers: {
           authorization: `Bearer ${token}`,
@@ -259,7 +259,7 @@ export async function GetEntreprises() {
     throw new Error("Token non trouvé");
   }
   try {
-    const response = await fetch("https://apinode.quentinbrandy.fr/api/getcompanies", {
+    const response = await fetch("http://localhost:3000/api/getcompanies", {
       method: "GET",
     });
     const data = await response.json();
@@ -280,7 +280,7 @@ export async function GetEntreprise(entrepriseid) {
   }
   try {
     const response = await fetch(
-      `https://apinode.quentinbrandy.fr/api/getcompany?entrepriseid=${entrepriseid}`,
+      `http://localhost:3000/api/getcompany?entrepriseid=${entrepriseid}`,
       {
         method: "GET",
       }
@@ -296,7 +296,7 @@ export async function GetEntreprise(entrepriseid) {
 
 export async function GetPartEntreprise() {
   try {
-    const response = await fetch(`https://apinode.quentinbrandy.fr/api/getpartcompany`, {
+    const response = await fetch(`http://localhost:3000/api/getpartcompany`, {
       method: "GET",
     });
     const data = await response.json();
@@ -316,7 +316,7 @@ export async function getCompanyAdminOffers() {
   }
   try {
     const response = await fetch(
-      "https://apinode.quentinbrandy.fr/api/getcompanyadminoffers",
+      "http://localhost:3000/api/getcompanyadminoffers",
       {
         headers: {
           authorization: `Bearer ${token}`,
@@ -344,7 +344,7 @@ export async function getCompanyOffers(entrepriseid) {
   }
   try {
     const response = await fetch(
-      `https://apinode.quentinbrandy.fr/api/getcompanyoffers?entrepriseid=${entrepriseid}`,
+      `http://localhost:3000/api/getcompanyoffers?entrepriseid=${entrepriseid}`,
       {
         method: "GET",
       }
@@ -366,7 +366,7 @@ export async function getOfferAdmin(offreid) {
   }
   try {
     const response = await fetch(
-      `https://apinode.quentinbrandy.fr/api/getofferadmin?offreid=${offreid}`,
+      `http://localhost:3000/api/getofferadmin?offreid=${offreid}`,
       {
         headers: {
           authorization: `Bearer ${token}`,
@@ -388,7 +388,7 @@ export async function getOfferAdmin(offreid) {
 export async function getOffer(offreid) {
   try {
     const response = await fetch(
-      `https://apinode.quentinbrandy.fr/api/getoffer?offreid=${offreid}`,
+      `http://localhost:3000/api/getoffer?offreid=${offreid}`,
       {
         headers: {
           "Content-Type": "application/json",
@@ -408,7 +408,7 @@ export async function getOffer(offreid) {
 export async function getResearchOffer() {
   try {
     const response = await fetch(
-      `https://apinode.quentinbrandy.fr/api/getresearchoffers`,
+      `http://localhost:3000/api/getresearchoffers`,
       {
         headers: {
           "Content-Type": "application/json",
@@ -429,7 +429,7 @@ export async function getResearchOffer() {
 
 export async function getFilterdSearch(searchvalue) {
     try {
-      const response = await fetch(`https://apinode.quentinbrandy.fr/api/getfiltredoffers`, {
+      const response = await fetch(`http://localhost:3000/api/getfiltredoffers`, {
         headers: {
           "Content-Type": "application/json",
           Accept: "application/json",
@@ -449,7 +449,7 @@ export async function getFilterdSearch(searchvalue) {
   export async function GetFilterdSearchEntreprise(searchvalue) {
     try {
       const response = await fetch(
-        `https://apinode.quentinbrandy.fr/api/getfiltredcompany`,
+        `http://localhost:3000/api/getfiltredcompany`,
         {
           headers: {
             "Content-Type": "application/json",
@@ -469,7 +469,7 @@ export async function getFilterdSearch(searchvalue) {
   }
 
   export async function getDiplome(){
-    let diplome = await fetch("../json/diplomes.json")
+    let diplome = await fetch("/src/libs/JSON/diplomes.json")
     let diplomes = await diplome.json();
     return diplomes;
   }
@@ -485,7 +485,7 @@ export async function getFilterdSearch(searchvalue) {
   }
   try {
     const response = await fetch(
-      `https://apinode.quentinbrandy.fr/api/getchat?offreid=${offreid}&userid=${userid}&entrepriseid=${entrepriseid}`,
+      `http://localhost:3000/api/getchat?offreid=${offreid}&userid=${userid}&entrepriseid=${entrepriseid}`,
       {
         headers: {
           authorization: `Bearer ${token}`,
@@ -514,7 +514,7 @@ export async function getFilterdSearch(searchvalue) {
     }
     try {
       const response = await fetch(
-        `https://apinode.quentinbrandy.fr/api/getuserbyid?userid=${userid}`,
+        `http://localhost:3000/api/getuserbyid?userid=${userid}`,
         {
           headers: {
             authorization: `Bearer ${token}`,

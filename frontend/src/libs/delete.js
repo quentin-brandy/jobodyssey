@@ -6,7 +6,7 @@ export async function DelOffer(offreid) {
     throw new Error("Token non trouvé");
   } 
     try {
-      const response = await fetch(`https://apinode.quentinbrandy.fr/api/deloffreusers/?offreid=${offreid.offreid}`, {
+      const response = await fetch(`http://localhost:3000/api/deloffreusers/?offreid=${offreid.offreid}`, {
         headers: {
           authorization: `Bearer ${token}`,
         },
@@ -31,7 +31,7 @@ export async function DelOffer(offreid) {
     throw new Error("Token non trouvé");
   } 
   try {
-  const response = await fetch(`https://apinode.quentinbrandy.fr/api/deleteexperience?experience=${userData}`, {
+  const response = await fetch(`http://localhost:3000/api/deleteexperience?experience=${userData}`, {
     headers: {
       authorization: `Bearer ${token}`,
       "Content-Type": "application/json", 
@@ -56,7 +56,7 @@ export async function DelOffer(offreid) {
       window.location.href = "/connexion";
     throw new Error("Token non trouvé");
   } 
-      const response = await fetch("https://apinode.quentinbrandy.fr/api/deletecompany", {
+      const response = await fetch("http://localhost:3000/api/deletecompany", {
         headers: {
           authorization: `Bearer ${token}`,
         },
@@ -77,7 +77,7 @@ export async function DelOffer(offreid) {
         throw new Error("Token non trouvé");
       } 
     try {
-      const response = await fetch("https://apinode.quentinbrandy.fr/api/deleteoffer", {
+      const response = await fetch("http://localhost:3000/api/deleteoffer", {
         headers: {
           authorization: `Bearer ${token}`,
           "Content-Type": "application/json", 
@@ -103,7 +103,7 @@ export async function DelOffer(offreid) {
               window.location.href = "/connexion";
             throw new Error("Token non trouvé");
           } 
-             const response = await fetch("https://apinode.quentinbrandy.fr/api/deleteuser", {
+             const response = await fetch("http://localhost:3000/api/deleteuser", {
                headers: {
                  authorization: `Bearer ${token}`,
                },

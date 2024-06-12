@@ -14,7 +14,7 @@ export  async function loader({ params }){
   
   export default function OffreCandidature(){
 const data = useLoaderData();
-
+console.log(data)
 
 return (
   <>

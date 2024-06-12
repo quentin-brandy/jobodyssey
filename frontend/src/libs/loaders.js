@@ -1,5 +1,5 @@
 export async function loadsecteur() {
-  let answer = await fetch("../json/secteurs.json");
+  let answer = await fetch("/src/libs/JSON/secteurs.json");
   let secteur = await answer.json();
   return secteur;
 }
@@ -26,7 +26,7 @@ export async function Getuser(){
             window.location.href = "/connexion";
           throw new Error("Token non trouvé");
         }
-        const response = await fetch("https://apinode.quentinbrandy.fr/api/getuser", {
+        const response = await fetch("http://localhost:3000/api/getuser", {
           headers: {
             authorization: `Bearer ${token}`,
           },
@@ -51,7 +51,7 @@ export async function Getuser(){
         throw new Error("Token non trouvé");
       }
       try {
-        const response = await fetch("https://apinode.quentinbrandy.fr/api/getuserexperiences", {
+        const response = await fetch("http://localhost:3000/api/getuserexperiences", {
           headers: {
             authorization: `Bearer ${token}`,
             "Content-Type": "application/json", 

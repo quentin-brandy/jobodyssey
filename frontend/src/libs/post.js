@@ -15,7 +15,7 @@ export const addCompany = async (formData2) => {
   formData.append("Linkedin", formData2.Linkedin || "a définir");
   formData.append("Site", formData2.Site || "a définir");
  
-  const response = await fetch("https://apinode.quentinbrandy.fr/api/addcompany", {
+  const response = await fetch("http://localhost:3000/api/addcompany", {
     method: "POST",
     body: formData,
   });
@@ -24,7 +24,7 @@ export const addCompany = async (formData2) => {
 };
 
 export const login = async (formData) => {
-  const response = await fetch("https://apinode.quentinbrandy.fr/api/login", {
+  const response = await fetch("http://localhost:3000/api/login", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -45,7 +45,7 @@ export async function addOffers(formData) {
     throw new Error("Token non trouvé");
   }
   try {
-    const response = await fetch("https://apinode.quentinbrandy.fr/api/addoffer", {
+    const response = await fetch("http://localhost:3000/api/addoffer", {
       headers: {
         authorization: `Bearer ${token}`,
         "Content-Type": "application/json",
@@ -72,7 +72,7 @@ export const UpdateOffer = async (userData) => {
     throw new Error("Token non trouvé");
   }
   try {
-    const response = await fetch("https://apinode.quentinbrandy.fr/api/updateoffer", {
+    const response = await fetch("http://localhost:3000/api/updateoffer", {
       headers: {
         authorization: `Bearer ${token}`,
         "Content-Type": "application/json",
@@ -100,7 +100,7 @@ export const changeCompanyEmail = async (userData) => {
 
   try {
     const response = await fetch(
-      "https://apinode.quentinbrandy.fr/api/updatecompanyemail",
+      "http://localhost:3000/api/updatecompanyemail",
       {
         headers: {
           authorization: `Bearer ${token}`,
@@ -128,7 +128,7 @@ export const changeCompanyPassword = async (userData) => {
   }
   try {
     const response = await fetch(
-      "https://apinode.quentinbrandy.fr/api/updatecompanypassword",
+      "http://localhost:3000/api/updatecompanypassword",
       {
         headers: {
           authorization: `Bearer ${token}`,
@@ -156,7 +156,7 @@ export const changeCompany = async (userData) => {
     throw new Error("Token non trouvé");
   }
   try {
-    const response = await fetch("https://apinode.quentinbrandy.fr/api/updatecompany", {
+    const response = await fetch("http://localhost:3000/api/updatecompany", {
       headers: {
         authorization: `Bearer ${token}`,
         "Content-Type": "application/json",
@@ -183,7 +183,7 @@ export const changeCompanyLogo = async (userData) => {
       throw new Error("Token non trouvé");
     }
     const response = await fetch(
-      "https://apinode.quentinbrandy.fr/api/updatecompanylogo",
+      "http://localhost:3000/api/updatecompanylogo",
       {
         headers: {
           authorization: `Bearer ${token}`,
@@ -213,7 +213,7 @@ export const changeCompanyBanner = async (userData) => {
       throw new Error("Token non trouvé");
     }
     const response = await fetch(
-      "https://apinode.quentinbrandy.fr/api/updatecompanybanner",
+      "http://localhost:3000/api/updatecompanybanner",
       {
         headers: {
           authorization: `Bearer ${token}`,
@@ -241,7 +241,7 @@ export async function CreateUser(userdata, diplomes) {
   formData.append("password", userdata.password);
   formData.append("diplomes", JSON.stringify(diplomesArray));
   formData.append("nom", userdata.nom);
-  formData.append("prenom", userdata.prénom);
+  formData.append("prenom", userdata.prenom);
   formData.append("presentation", userdata.presentation);
   formData.append(
     "photoprofile",
@@ -256,7 +256,7 @@ export async function CreateUser(userdata, diplomes) {
   formData.append("Linkedin", userdata.Linkedin || "a définir");
   formData.append("Site", userdata.Site || "a définir");
 
-  const response = await fetch("https://apinode.quentinbrandy.fr/api/adduser", {
+  const response = await fetch("http://localhost:3000/api/adduser", {
     method: "POST",
     body: formData,
   });
@@ -276,7 +276,7 @@ export async function ChangeUserInfo(userdata) {
     window.location.href = "/connexion";
     throw new Error("Token non trouvé");
   }
-  const response = await fetch("https://apinode.quentinbrandy.fr/api/updateuserinfo", {
+  const response = await fetch("http://localhost:3000/api/updateuserinfo", {
     headers: {
       authorization: `Bearer ${token}`,
     },
@@ -295,7 +295,7 @@ export async function changeUser(userData) {
     throw new Error("Token non trouvé");
   }
   try {
-    const response = await fetch("https://apinode.quentinbrandy.fr/api/updateuser", {
+    const response = await fetch("http://localhost:3000/api/updateuser", {
       headers: {
         authorization: `Bearer ${token}`,
         "Content-Type": "application/json",
@@ -322,7 +322,7 @@ export const changeUserEmail = async (userData) => {
   }
 
   try {
-    const response = await fetch("https://apinode.quentinbrandy.fr/api/updateuseremail", {
+    const response = await fetch("http://localhost:3000/api/updateuseremail", {
       headers: {
         authorization: `Bearer ${token}`,
         "Content-Type": "application/json",
@@ -349,7 +349,7 @@ export const changeUserPassword = async (userData) => {
   }
   try {
     const response = await fetch(
-      "https://apinode.quentinbrandy.fr/api/updateuserpassword",
+      "http://localhost:3000/api/updateuserpassword",
       {
         headers: {
           authorization: `Bearer ${token}`,
@@ -380,7 +380,7 @@ export async function changeUserDiplomes(formData) {
     throw new Error("Token non trouvé");
   }
   try {
-    const response = await fetch("https://apinode.quentinbrandy.fr/api/updateuser", {
+    const response = await fetch("http://localhost:3000/api/updateuser", {
       headers: {
         authorization: `Bearer ${token}`,
         "Content-Type": "application/json",
@@ -406,7 +406,7 @@ export async function CreateExperience(expdata) {
     throw new Error("Token non trouvé");
   }
   try {
-    const response = await fetch("https://apinode.quentinbrandy.fr/api/createexperience", {
+    const response = await fetch("http://localhost:3000/api/createexperience", {
       headers: {
         authorization: `Bearer ${token}`,
         "Content-Type": "application/json",
@@ -432,7 +432,7 @@ export async function ChangeExperience(expdata) {
     throw new Error("Token non trouvé");
   }
   try {
-    const response = await fetch("https://apinode.quentinbrandy.fr/api/updateexperience", {
+    const response = await fetch("http://localhost:3000/api/updateexperience", {
       headers: {
         authorization: `Bearer ${token}`,
         "Content-Type": "application/json",
@@ -459,7 +459,7 @@ export async function postulerOffre(offreId) {
   }
   try {
     const response = await fetch(
-      `https://apinode.quentinbrandy.fr/api/offrepostuler/?offreid=${offreId.offreid}`,
+      `http://localhost:3000/api/offrepostuler/?offreid=${offreId.offreid}`,
       {
         headers: {
           authorization: `Bearer ${token}`,
@@ -487,7 +487,7 @@ export async function AddChatMessage(ChatData){
   }
   try {
     const response = await fetch(
-      `https://apinode.quentinbrandy.fr/api/addchatmessage`,
+      `http://localhost:3000/api/addchatmessage`,
       {
         headers: {
           authorization: `Bearer ${token}`,

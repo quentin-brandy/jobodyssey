@@ -120,7 +120,7 @@ const Addmessage = async () => {
     let response = await AddChatMessage(ChatData);
     if(response.message === "message envoyé") {
         if(chatmessage.message === "pas de messages") {
-            setChatmessage("")
+            setChatmessage([])
             socketRef.current.emit('SendMessage', "new message");
             Newmessage.createdAt = new Date();
             setLocalMessage([... LocalMessage, Newmessage]);
