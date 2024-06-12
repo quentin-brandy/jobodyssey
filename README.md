@@ -67,5 +67,5 @@ npm start
 Assurez-vous que votre serveur XAMPP est en cours d'exécution et que les services Apache et MySQL sont activés.
 
 ### Avertissement
-Le projet a duré 2 semaines, donc il y a quelques points qui pourraient être optimisés ou quelques bugs qui pourraient subsister.
+Le projet a duré 2 mois, donc il y a quelques points qui pourraient être optimisés ou quelques bugs qui pourraient subsister.
 

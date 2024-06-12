@@ -12,12 +12,5 @@
     "database": "jobodyssey",
     "host": "127.0.0.1",
     "dialect": "mysql"
-  },
-  "production": {
-    "username": "brandy",
-    "password": "S1a3q8bn.",
-    "database": "jobodyssey",
-    "host": "localhost:3306",
-    "dialect": "mysql"
   }
 }
